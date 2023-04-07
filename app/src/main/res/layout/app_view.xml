@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@color/white_two_transparent"
+        app:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#8CFAF5F5"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T-nect "
+                android:layout_centerVertical="true"
+                android:textColor="#555454"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:id="@+id/text_versions"
+                android:layout_toRightOf="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Текущая версия: "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Последняя версия: "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_margin="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/val_versions"
+                android:layout_toRightOf="@+id/text_versions"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.0.0"
+                    android:layout_margin="5dp"
+                    android:textColor="#555454"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/last_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.0.0"
+                    android:layout_margin="5dp"
+                    android:textColor="#555454"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/upgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Обновить"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingHorizontal="20dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:background="#9B20DD40"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="5dp"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>
